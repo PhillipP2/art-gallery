@@ -1,6 +1,6 @@
 @use '../abstracts/breakpoints';
 
-.home > section + section {
+.home section + section {
   margin-top: 7.5rem;
 }
 

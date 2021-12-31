@@ -1,3 +1,6 @@
+const pinIcon = new URL('./assets/icon-location.svg', import.meta.url);
+// img.src = new URL('./assets/icon-location.svg', import.meta.url);
+
 const addressXCordinate = 41.4813163;
 const addressYCordinate = -71.3103603;
 let map = L.map('map').setView([41.4818884, -71.3114193], 15);
@@ -12,7 +15,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(map);
 
 let customPin = L.icon({
-  iconUrl: './icon-location.svg',
+  iconUrl: pinIcon,
   iconSize:     [33, 44], // size of the icon
   iconAnchor:   [16, 44], // point of the icon which will correspond to marker's location
   popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
